@@ -8,7 +8,35 @@
 </head>
 <body>
 
-  <div class="app">
+  <p id="loading">Loading...</p>
+
+  <div class="app" id="auth-screen" hidden>
+    <h1>Log in</h1>
+
+    <button id="google-login-btn" type="button">Sign in with Google</button>
+
+    <hr>
+
+    <form id="magic-link-form">
+      <input
+        type="email"
+        id="email-input"
+        placeholder="you@example.com"
+        autocomplete="email"
+        required
+      >
+      <button type="submit">Send magic link</button>
+    </form>
+
+    <p id="auth-status"></p>
+  </div>
+
+  <div class="app" id="app-screen" hidden>
+    <div id="user-bar">
+      <span id="user-email"></span>
+      <button id="logout-btn" type="button">Log out</button>
+    </div>
+
     <h1>My To-Do List</h1>
 
     <form id="todo-form">
@@ -26,6 +54,7 @@
     <p id="empty-message">Nothing here yet — add your first task above!</p>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
 </body>
 </html>

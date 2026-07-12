@@ -110,3 +110,79 @@ button[type="submit"]:hover {
   font-size: 0.9rem;
   margin-top: 12px;
 }
+
+#loading {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+#google-login-btn {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 1rem;
+  background: #ffffff;
+  color: #222;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#google-login-btn:hover {
+  background: #f2f4f8;
+}
+
+#auth-screen hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+#magic-link-form {
+  display: flex;
+  gap: 8px;
+}
+
+#email-input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+}
+
+#email-input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+#auth-status {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+#user-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+#logout-btn {
+  background: none;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: #666;
+}
+
+#logout-btn:hover {
+  border-color: #b0b0b0;
+  color: #222;
+}
